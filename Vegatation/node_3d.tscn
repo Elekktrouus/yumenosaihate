@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://coj3h48q3kilp"]
-
-[ext_resource type="PackedScene" uid="uid://cq5ani2bk4bin" path="res://Vegatation/World/femboyhill.tscn" id="1_mcdtq"]
-
-[node name="Node3D" type="Node3D"]
-
-[node name="Node3D" parent="." instance=ExtResource("1_mcdtq")]

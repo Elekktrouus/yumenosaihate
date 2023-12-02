@@ -32,8 +32,9 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	if Input.is_action_pressed("RUN"):
-		$Camera.fov +=2
-		$Camera.fov = clamp($Camera.fov,85,110)
+		if (velocity.y >0 or velocity.x >0):
+			$Camera.fov +=2
+			$Camera.fov = clamp($Camera.fov,85,110)
 		SPEED = 7.0
 	if  Input.is_action_just_released("RUN"):
 		$Camera.fov = 85
@@ -53,8 +54,9 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_area_3d_body_entered(body):
+func _on_death_plane_body_entered(body):
 	if body.name=="player":
-		get_tree().change_scene_to_file("res://node_3d.tscn")
+		get_tree().change_scene_to_file("res://World/world.tscn")
 
 	pass # Replace with function body.
+

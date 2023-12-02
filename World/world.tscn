@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://coj3h48q3kilp"]
+[gd_scene load_steps=5 format=3 uid="uid://coj3h48q3kilp"]
 
 [ext_resource type="PackedScene" uid="uid://cq5ani2bk4bin" path="res://Vegatation/World/femboyhill.tscn" id="1_2obdj"]
 [ext_resource type="PackedScene" uid="uid://dafp74bf8oak5" path="res://player.tscn" id="2_iljm3"]
+[ext_resource type="PackedScene" uid="uid://dbpgyc3ena5tr" path="res://Vegatation/thistle.tscn" id="3_g8c52"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_n5pm6"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -11,3 +14,13 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.61942, -5.89684)
 
 [node name="Camera" type="Camera3D" parent="player"]
+
+[node name="Thistle" parent="." instance=ExtResource("3_g8c52")]
+
+[node name="DeathPlane" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeathPlane"]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, -10, 0)
+shape = SubResource("WorldBoundaryShape3D_n5pm6")
+
+[connection signal="body_entered" from="DeathPlane" to="player" method="_on_death_plane_body_entered"]

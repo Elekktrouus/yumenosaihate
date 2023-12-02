@@ -2,17 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f714cvvwb8wk"
-path.s3tc="res://.godot/imported/metal-tex.png-1a61700c40562a6eacbdb052324a4600.s3tc.ctex"
+uid="uid://dj2npsyjtkxsm"
+path.s3tc="res://.godot/imported/shithill_grass.jpg-b3d11a7d39358d80b5969bb334d0ec37.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={}
 
 [deps]
 
-source_file="res://world/box_metal/metal-tex.png"
-dest_files=["res://.godot/imported/metal-tex.png-1a61700c40562a6eacbdb052324a4600.s3tc.ctex"]
+source_file="res://Vegatation/World/shithill_grass.jpg"
+dest_files=["res://.godot/imported/shithill_grass.jpg-b3d11a7d39358d80b5969bb334d0ec37.s3tc.ctex"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bowydeerhw2np"
-path.s3tc="res://.godot/imported/shadow.png-aaa4c8bbbed404566471584113127456.s3tc.ctex"
+uid="uid://dytcon2xcy5lp"
+path.s3tc="res://.godot/imported/thistle.png-221f1aed4f7348006a306b90f7a85d03.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://world/shadow/shadow.png"
-dest_files=["res://.godot/imported/shadow.png-aaa4c8bbbed404566471584113127456.s3tc.ctex"]
+source_file="res://Vegatation/thistle.png"
+dest_files=["res://.godot/imported/thistle.png-221f1aed4f7348006a306b90f7a85d03.s3tc.ctex"]
 
 [params]
 

@@ -1,9 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://77ckde8m2frc"]
+[gd_scene load_steps=7 format=3 uid="uid://77ckde8m2frc"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_7qpmd"]
+[ext_resource type="Texture2D" uid="uid://ckg2icfk4qxiu" path="res://kanye east.jpg" id="1_a6bpa"]
+[ext_resource type="Texture2D" uid="uid://cekxfif60a4ae" path="res://Susimposter.png" id="2_hvh6j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvqof"]
+albedo_texture = ExtResource("1_a6bpa")
+
+[sub_resource type="SphereMesh" id="SphereMesh_pkoo5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_86rj0"]
+transparency = 1
+albedo_texture = ExtResource("2_hvh6j")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_avdii"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127999, 0.0747247, -0.151153)
-mesh = SubResource("BoxMesh_7qpmd")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0203074, 0.368685, 0.586058)
+material_override = SubResource("StandardMaterial3D_bvqof")
+mesh = SubResource("SphereMesh_pkoo5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.06056, 0.368685, 0.586058)
+material_override = SubResource("StandardMaterial3D_bvqof")
+mesh = SubResource("SphereMesh_pkoo5")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.489501, 0.970632, 0.586058)
+material_override = SubResource("StandardMaterial3D_bvqof")
+mesh = SubResource("SphereMesh_pkoo5")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015313, 0.741745, -0.0167798)
+material_override = SubResource("StandardMaterial3D_bvqof")
+mesh = SubResource("SphereMesh_pkoo5")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.999992, -0.00336056, -0.00196329, 0.00196331, -1.82525e-06, -0.999998, 0.00336055, -0.999994, 8.41925e-06, -0.63643, 1.14461, -1.20773)
+material_override = SubResource("StandardMaterial3D_86rj0")
+mesh = SubResource("PlaneMesh_avdii")

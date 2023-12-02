@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://77ckde8m2frc"]
 
-[ext_resource type="Texture2D" uid="uid://ckg2icfk4qxiu" path="res://kanye east.jpg" id="1_a6bpa"]
-[ext_resource type="Texture2D" uid="uid://cekxfif60a4ae" path="res://Susimposter.png" id="2_hvh6j"]
+[ext_resource type="Texture2D" uid="uid://ckg2icfk4qxiu" path="res://Goofy/kanye east.jpg" id="1_a6bpa"]
+[ext_resource type="Texture2D" uid="uid://cekxfif60a4ae" path="res://Goofy/Susimposter.png" id="2_hvh6j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvqof"]
 albedo_texture = ExtResource("1_a6bpa")

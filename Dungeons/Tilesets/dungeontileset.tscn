@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8cmybr102xyu"]
+
+[ext_resource type="PackedScene" uid="uid://c0y8bfdhfuwyd" path="res://Dungeons/Tilesets/dungeontileset.glb" id="1_ap8ua"]
+[ext_resource type="Shader" path="res://shaders/psx_lit.gdshader" id="2_jtptf"]
+[ext_resource type="Texture2D" uid="uid://dfoim0ijehyj2" path="res://Dungeons/Tilesets/dungeontileset_dungeontileset.png" id="3_fy272"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ih8bq"]
+render_priority = 0
+shader = ExtResource("2_jtptf")
+shader_parameter/modulate_color = Color(1, 1, 1, 1)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_pan_velocity = Vector2(0, 0)
+shader_parameter/albedoTex = ExtResource("3_fy272")
+
+[node name="dungeontileset" instance=ExtResource("1_ap8ua")]
+
+[node name="wall" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ih8bq")
+
+[node name="corner-in" parent="." index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_ih8bq")
+
+[node name="floor" parent="." index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_ih8bq")
+
+[node name="corner-out" parent="." index="3"]
+transform = Transform3D(0.985191, 0, 0, 0, 0.985191, 0, 0, 0, 0.985191, 4, 0, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_ih8bq")

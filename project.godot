@@ -10,14 +10,15 @@ config_version=5
 
 [application]
 
-config/name="Godot PSX Style Demo"
-config/description="Demo project featuring a collection of PS1 style shaders and materials for Godot engine.
-(MIT License)
-https://github.com/MenacingMecha/godot-psx-style-demo/"
-run/main_scene="res://post_process/pp_stack.tscn"
+config/name="Dream's Edge"
+config/name_localized={
+"ja": "夢の最果て"
+}
+run/main_scene="res://Dungeons/dungeon.tscn"
 config/features=PackedStringArray("4.2")
 run/max_fps=24
-config/icon="res://readme-assets/screenshot.png"
+boot_splash/image="res://Goofy/Susimposter.png"
+config/icon="res://Goofy/Susimposter.png"
 
 [display]
 

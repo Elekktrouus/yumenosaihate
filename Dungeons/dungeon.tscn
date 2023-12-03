@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://fa2imnl5ww2e"]
+
+[ext_resource type="PackedScene" uid="uid://dafp74bf8oak5" path="res://player.tscn" id="1_ywdwb"]
+[ext_resource type="MeshLibrary" uid="uid://dn50t7gt5500a" path="res://Dungeons/Tilesets/tileset.tres" id="2_ay6h7"]
+
+[sub_resource type="Environment" id="Environment_fr0jp"]
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+
+[node name="Dungeon" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_ywdwb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46223, 0)
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
+mesh_library = ExtResource("2_ay6h7")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(393215, 0, 2, 327680, 0, 2, 327680, 1, 655360, 393215, 1, 655360, 393214, 0, 2, 393214, 1, 655360, 327681, 1, 655360, 327681, 0, 2, 327681, 65535, 0, 393214, 65535, 0, 393215, 65535, 0, 327680, 65535, 0, 393213, 65535, 3, 393211, 1, 655361, 393212, 65535, 655362, 393212, 65534, 655362, 393213, 65534, 1441792, 393213, 65533, 1441792, 393213, 65532, 1441792, 393213, 1, 655360, 393212, 1, 655360, 393211, 0, 1048576, 393211, 65535, 1048576, 393211, 65534, 1048576, 393211, 65533, 1048576, 393211, 65532, 1048576, 393213, 0, 1048578, 393212, 0, 1048578, 393212, 65532, 1048578, 393212, 65533, 1048578, 327682, 65535, 1, 327682, 1, 1441793, 327682, 0, 1441792)
+}
+metadata/_editor_floor_ = Vector3(0, 5, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fr0jp")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -3.213, 0, 0.365103)
+light_color = Color(0, 1, 1, 1)
+spot_range = 36.229
+spot_angle = 90.0

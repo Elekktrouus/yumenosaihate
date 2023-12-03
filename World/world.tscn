@@ -13,8 +13,6 @@
 [node name="player" parent="." instance=ExtResource("2_iljm3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.61942, -5.89684)
 
-[node name="Camera" type="Camera3D" parent="player"]
-
 [node name="Thistle" parent="." instance=ExtResource("3_g8c52")]
 
 [node name="DeathPlane" type="Area3D" parent="."]

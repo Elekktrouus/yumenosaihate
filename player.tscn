@@ -13,3 +13,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0508093, -0.219376, 0.10880
 shape = SubResource("CapsuleShape3D_ua1y4")
 
 [node name="Camera" type="Camera3D" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Camera"]

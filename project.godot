@@ -17,8 +17,8 @@ config/name_localized={
 run/main_scene="res://Dungeons/dungeon.tscn"
 config/features=PackedStringArray("4.2")
 run/max_fps=24
-boot_splash/image="res://Goofy/Susimposter.png"
-config/icon="res://Goofy/Susimposter.png"
+boot_splash/image="res://icon.png"
+config/icon="res://icon.svg"
 
 [display]
 

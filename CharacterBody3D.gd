@@ -32,7 +32,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	if Input.is_action_pressed("RUN"):
-		if (velocity.y >0 or velocity.x >0):
+		if (velocity.y >0 or velocity.x >0 or velocity.z >0 or velocity.y <0 or velocity.x <0 or velocity.z <0):
 			$Camera.fov +=2
 			$Camera.fov = clamp($Camera.fov,85,110)
 		SPEED = 7.0

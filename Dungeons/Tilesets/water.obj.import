@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dh8cbwl7ggldq"
+path="res://.godot/imported/water.obj-7aff6e8a8ceb24a7cb1addaa070a40e1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/water.obj-7aff6e8a8ceb24a7cb1addaa070a40e1.mesh"]
+
+source_file="res://Dungeons/Tilesets/water.obj"
+dest_files=["res://.godot/imported/water.obj-7aff6e8a8ceb24a7cb1addaa070a40e1.mesh", "res://.godot/imported/water.obj-7aff6e8a8ceb24a7cb1addaa070a40e1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
